@@ -1,0 +1,750 @@
+@import url("https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Cairo:wght@300;400;500;600;700;800;900;1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200&display=swap");
+html {
+  margin: 0;
+  padding: 0;
+}
+html body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  background-color: black;
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+  z-index: 99;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 5px;
+}
+nav ul li {
+  margin: 10px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.3em;
+}
+nav ul li a:hover {
+  color: rgb(255, 115, 0);
+}
+
+header#index {
+  width: 100vw;
+  height: 120vh;
+  padding: 0vh 0px 0vh 0px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -3;
+}
+header#index div.main div.container {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+}
+header#index div.main div.container img {
+  position: absolute;
+  width: 100%;
+  height: 120vh;
+  object-fit: cover;
+  z-index: -1;
+}
+header#index div.main div.container img.bg {
+  width: 100%;
+}
+header#index div.main div.container img.home-astroid {
+  width: 34%;
+  object-fit: contain;
+  position: absolute;
+  right: 15%;
+  top: -15%;
+}
+header#index div.main h1 {
+  text-align: center;
+  font-size: 3em;
+  font-weight: 800;
+  color: #ffffff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -30%);
+  -webkit-transform: translate(-50%, -30%);
+  -o-transform: translate(-50%, -30%);
+  -moz-transform: translate(-50%, -30%);
+  -ms-transform: translate(-50%, -30%);
+  z-index: 2;
+}
+
+div.about-header {
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 2% 48% 50%;
+  height: 100vh;
+  padding: 5vh 0 5vw 0;
+  margin-bottom: 5vw;
+}
+div.about-header h2 {
+  font-size: 2em;
+  margin: 20px;
+}
+div.about-header div.planets {
+  height: 0px;
+  width: 0px;
+  padding: 0;
+  margin: 0;
+}
+div.about-header div.planets img {
+  padding: 0;
+  margin: 0;
+}
+div.about-header div.planets img#earthRotate {
+  width: 700px;
+  margin: 0;
+  padding: 0;
+  border-radius: 50%;
+}
+div.about-header div.planets img#moonMove {
+  width: 100px;
+  position: absolute;
+  top: 150%;
+  right: 50%;
+  cursor: pointer;
+}
+div.about-header div.text {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+div.about-main {
+  background: url("/assets/sun1.png");
+  background-size: contain;
+  background-position-x: 50%;
+  background-repeat: no-repeat;
+  padding: 10px 0 10vh 0;
+}
+div.about-main h2 {
+  text-align: center;
+  font-size: 3em;
+  padding-top: 30px;
+}
+div.about-main div.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin: 1vw 5vw 1vw 5.1vw;
+  border-radius: 10px;
+}
+div.about-main div.grid div#code {
+  transform: scale(1.1);
+}
+div.about-main div.grid div#code:hover {
+  box-shadow: 10px 10px 200px rgb(169, 169, 169);
+}
+div.about-main div.grid div.item {
+  backdrop-filter: blur(15px);
+  border-radius: 10px;
+  height: 60vh;
+  background: rgba(32, 32, 32, 0.25);
+  background-position: 70%;
+  margin: 2vw;
+  margin-top: 20px;
+  padding: 2vw;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 10px 10px 200px rgb(169, 169, 169);
+  transition: 0.2s;
+}
+div.about-main div.grid div.item h3 {
+  margin: 0;
+  padding: 5px;
+  font-size: 2em;
+}
+div.about-main div.grid div.item p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+div.about-main div.grid div.item:hover {
+  box-shadow: 10px 10px 200px rgb(169, 169, 169);
+  transition: 0.2s;
+}
+div.about-main div.grid div.item div.buttons {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+div.about-main div.grid div.item div.buttons a:hover {
+  transition: 0.2s;
+  box-shadow: 10px 10px 200px rgb(169, 169, 169);
+}
+div.about-main div.grid div.item div.buttons a {
+  margin: 10px;
+  border-radius: 25px;
+  display: block;
+  text-decoration: none;
+  color: white;
+  background-color: rgba(35, 35, 35, 0.4);
+  padding: 15px;
+}
+
+div.about-info {
+  background-image: url("/assets/extras/astronaut.jpg");
+  background-size: cover;
+  width: 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  justify-content: center;
+}
+div.about-info div.content {
+  width: 100%;
+  height: 90vh;
+  margin: 3em;
+  padding: 50px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+div.about-info div.content p {
+  font-size: 3em;
+  font-weight: 700;
+  margin: 0px 0px 0 0px;
+  padding: 0 0 0 50px;
+  border-left: #911acd 5px solid;
+}
+div.about-info div.content a {
+  margin-top: 10px;
+  border-left: #911acd 5px solid;
+  text-decoration: none;
+  font-size: 2em;
+  padding: 0 0 0 50px;
+  color: white;
+  transition: 0.5s;
+}
+div.about-info div.content a:hover {
+  border-left: #911acd 30px solid;
+  padding: 0 0 0 25px;
+  transition: 0.5s;
+}
+
+section#about {
+  color: white;
+}
+
+section#work-button {
+  color: white;
+  padding: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/assets/bg.jpg");
+  height: 50vh;
+}
+section#work-button h2 {
+  font-size: 2.5em;
+}
+section#work-button a {
+  background-color: rgba(233, 146, 255, 0.7);
+  border-radius: 10px;
+  padding: 10px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  transition: 0.5s;
+  margin-top: 15px;
+  font-size: 1.5em;
+}
+section#work-button a:hover {
+  transform: scale(1.05);
+  transition: 0.5s;
+}
+
+section#discover {
+  padding: 3vw;
+  background-image: url("/assets/discovery.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-bottom: 50px;
+}
+section#discover h2 {
+  text-align: center;
+  font-size: 3em;
+}
+section#discover div.vs {
+  background-color: rgba(21, 21, 21, 0.7);
+  width: 60%;
+  transform: rotate(5deg);
+  -webkit-transform: rotate(5deg);
+  -moz-transform: rotate(5deg);
+  -ms-transform: rotate(5deg);
+  -o-transform: rotate(5deg);
+  padding: 10px;
+  box-shadow: 10px 10px 30px rgb(0, 0, 0);
+  margin: 50px 0px 0px 0px;
+  border-radius: 15px;
+  animation: vsc-move 85s infinite alternate;
+}
+section#discover div.vs div.grid {
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+section#discover div.vs div.grid div.side {
+  background-color: rgba(15, 15, 15, 0.4);
+  border-radius: 10px;
+  margin: 0.5vw;
+}
+section#discover div.vs div.grid div.side div.branding {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin: 5px;
+  cursor: pointer;
+}
+section#discover div.vs div.grid div.side div.branding img {
+  width: 50px;
+}
+section#discover div.vs div.grid div.side div.branding p {
+  margin: 1px;
+}
+section#discover div.vs div.grid div.side ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+section#discover div.vs div.grid div.side ul li {
+  margin: 10px;
+  padding: 10px 15px 10px 15px;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  cursor: pointer;
+}
+section#discover div.vs div.grid div.side ul li:hover, section#discover div.vs div.grid div.side ul .active {
+  background-image: linear-gradient(80deg, rgb(200, 20, 255), rgb(101, 0, 196));
+  animation: li-bg 15s alternate infinite;
+  background-size: 200%;
+}
+@keyframes li-bg {
+  100% {
+    background-position: right;
+  }
+}
+section#discover div.vs div.grid div.main div.top {
+  margin: 0.5vw;
+  background-color: rgba(15, 15, 15, 0.4);
+  border-radius: 10px;
+  font-family: "Roboto Mono", monospace;
+}
+section#discover div.vs div.grid div.main div.top h3 {
+  font-weight: 200;
+  padding: 10px;
+}
+section#discover div.vs div.grid div.main div.editor {
+  margin: 1vw;
+}
+section#discover div.vs div.grid div.main div.editor div.grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+section#discover div.vs div.grid div.main div.editor div.grid p.title {
+  margin-top: 15px;
+  font-weight: 700;
+}
+section#discover div.vs div.grid div.main div.editor div.grid ul {
+  list-style: none;
+}
+section#discover div.vs div.grid div.main div.editor div.grid ul li {
+  margin: 3px 0px 3px 0px;
+  color: white;
+}
+section#discover div.vs div.grid div.main div.editor div.grid ul li a {
+  color: rgb(67, 142, 255);
+  text-decoration: none;
+}
+section#discover div.vs div.grid div.main div.editor div.grid ul li a:hover {
+  text-decoration: rgb(67, 142, 255) underline;
+}
+section#discover div.vs div.grid div.main div.editor div.grid div.right {
+  margin-left: 1vw;
+}
+section#discover div.vs div.grid div.main div.editor div.grid div.right div {
+  cursor: pointer;
+  text-decoration: none;
+  background-color: rgba(27, 27, 27, 0.5);
+  padding: 25px 15px 25px 15px;
+  margin-top: 20px;
+  border-radius: 10px;
+  border-left: 1.5px rgb(220, 20, 255) solid;
+}
+section#discover div.vs div.grid div.main div.editor div.grid div.right div p {
+  margin: 0;
+  padding: 0;
+}
+section#discover div.vs div.grid div.main div.editor div.grid div.right div.legal {
+  border-left: 1.5px rgb(183, 0, 255) solid;
+  cursor: auto;
+}
+section#discover div.vs div.grid div.main div.editor div.grid div.right div.legal p {
+  font-size: 0.7em;
+}
+section#discover div.design h3 {
+  font-size: 2em;
+}
+section#discover div.design a {
+  text-decoration: none;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  color: white;
+  padding: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  margin: 30px 0 0 0;
+  font-size: 1.5em;
+  transition: 0.5s;
+}
+section#discover div.design a:hover {
+  transition: 0.5s;
+  box-shadow: 10px 10px 50px rgba(255, 255, 255, 0.5);
+}
+section#discover div.design div.main {
+  background-image: url("/assets/astroid1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 20vh;
+  margin-left: 60vw;
+  transform: rotate(5deg);
+  -webkit-transform: rotate(5deg);
+  -moz-transform: rotate(5deg);
+  -ms-transform: rotate(5deg);
+  -o-transform: rotate(5deg);
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+  justify-content: center;
+  flex-direction: column;
+  animation: astroidOne 35s infinite alternate;
+  -webkit-animation: astroidOne 55s infinite alternate;
+  height: 400px;
+  width: 400px;
+}
+section#discover div.design div.main div.content {
+  text-align: center;
+}
+section#discover div.design div.main div.content h3 {
+  padding-bottom: 20px;
+}
+section#discover div.discortics {
+  background-image: url("/assets/astroid2.png");
+  height: 300px;
+  width: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  vertical-align: middle;
+  animation: astroidTwo 30s alternate infinite;
+  margin-left: 10vw;
+  margin-top: -30vh;
+  -webkit-animation: astroidTwo 50s alternate infinite;
+  -moz-animation: astroidTwo 50s alternate infinite;
+  -o-animation: astroidTwo 50s alternate infinite;
+  transform: rotate(-10deg);
+  -webkit-transform: rotate(-10deg);
+  -moz-transform: rotate(-10deg);
+  -ms-transform: rotate(-10deg);
+  -o-transform: rotate(-10deg);
+}
+section#discover div.discortics div.content {
+  vertical-align: middle;
+}
+section#discover div.discortics div.content h3 {
+  padding-bottom: 10px;
+  font-size: 1.4em;
+}
+section#discover div.discortics div.content a {
+  font-size: 1em;
+  padding: 7px;
+}
+
+@keyframes astroidOne {
+  100% {
+    transform: rotate(30deg);
+    -webkit-transform: rotate(30deg);
+    -moz-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    -o-transform: rotate(30deg);
+    margin-top: -5vh;
+    margin-left: 55vw;
+  }
+}
+@keyframes astroidTwo {
+  100% {
+    transform: rotate(-30deg) scale(0.9);
+    -webkit-transform: rotate(-30deg) scale(0.9);
+    -moz-transform: rotate(-30deg) scale(0.9);
+    -ms-transform: rotate(-30deg) scale(0.9);
+    -o-transform: rotate(-30deg) scale(0.9);
+    margin-left: 40vh;
+    margin-top: -5vh;
+  }
+}
+@keyframes vsc-move {
+  100% {
+    margin: 90px 0px 0px 300px;
+    transform: rotate(-10deg) scale(0.85);
+  }
+}
+section#contact {
+  background-image: url("/assets/contact.png");
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 50px 20vw 50px 20vw;
+}
+section#contact h2 {
+  font-size: 2em;
+}
+section#contact form {
+  margin: 30px 10vw 30px 10vw;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px 30px 20px 30px;
+  border-radius: 15px;
+}
+section#contact form h3 {
+  font-size: 1.5em;
+}
+section#contact form input, section#contact form select {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  font-size: 1em;
+  border: none;
+  border-radius: 15px;
+  margin: 2px;
+  color: white;
+  width: 80%;
+}
+section#contact form input::placeholder, section#contact form select::placeholder {
+  color: rgb(148, 148, 148);
+}
+section#contact form i {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px;
+  margin: 5px;
+  font-size: 1.2em;
+  border-radius: 15px;
+}
+section#contact form i#contact-info:after {
+  content: "Please note your email above will be used if you select email or if I can't contact you";
+  font-size: 0.7em;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 15px;
+  text-decoration: none;
+  position: absolute;
+  margin: 0px 10px 0px 10px;
+  display: none;
+  right: 20%;
+}
+section#contact form i#contact-info:hover:after {
+  display: block;
+}
+section#contact form i#service-info:after {
+  content: "If you want more than one service, please submit this form again.";
+  font-size: 0.7em;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 15px;
+  text-decoration: none;
+  position: absolute;
+  margin: 0px 10px 0px 10px;
+  display: none;
+  right: 20%;
+}
+section#contact form i#service-info:hover:after {
+  display: block;
+}
+section#contact form i#basic-info:after {
+  content: "Please take extra care typing in your email.";
+  font-size: 0.7em;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 15px;
+  text-decoration: none;
+  position: absolute;
+  margin: 0px 10px 0px 10px;
+  display: none;
+  right: 20%;
+}
+section#contact form i#basic-info:hover:after {
+  display: block;
+}
+section#contact form i#description-info:after {
+  content: "We can always change the details later.";
+  font-size: 0.7em;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 15px;
+  text-decoration: none;
+  position: absolute;
+  margin: 0px 10px 0px 10px;
+  display: none;
+  right: 20%;
+}
+section#contact form i#description-info:hover:after {
+  display: block;
+}
+section#contact form div.group {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  vertical-align: middle;
+  align-items: center;
+  border-radius: 15px;
+  color: white;
+  width: 100%;
+}
+section#contact button {
+  border: none;
+  border-radius: 15px;
+  background-color: rgba(35, 160, 0, 0.7);
+  padding: 10px;
+  color: white;
+  cursor: pointer;
+}
+section#contact button:hover {
+  background-color: rgba(39, 180, 0, 0.7);
+}
+
+footer {
+  padding: 2vw;
+  background-image: radial-gradient(rgb(2, 6, 6), rgb(0, 0, 0));
+  text-align: center;
+  padding-bottom: 3vw;
+}
+footer div.grid {
+  display: grid;
+  grid-template-columns: 33.33% 33.33% 33.333%;
+  margin-bottom: 10px;
+}
+footer div.grid div a, footer div.grid div p {
+  display: block;
+  text-decoration: none;
+  color: white;
+  font-size: 0.7em;
+  font-weight: 100;
+}
+footer div.grid div a:hover, footer div.grid div p:hover {
+  text-decoration: underline rgb(255, 255, 255);
+}
+footer div.grid div p {
+  text-decoration: none;
+  color: white;
+}
+footer div.grid div h3 {
+  margin: 5px;
+  font-weight: 700;
+}
+footer div.grid div h4 {
+  margin: 2px;
+  font-size: 0.7em;
+  font-weight: 500;
+}
+footer div.grid div .badge-free:after {
+  content: "free!";
+  font-size: 0.5em;
+  border-radius: 5px;
+  background-color: rgb(34, 161, 36);
+  height: 5px;
+  width: 5px;
+  margin: 2px;
+  padding: 0.4em;
+  text-decoration: none;
+  color: white;
+}
+footer div.grid div .badge-paid:after {
+  content: "paid!";
+  font-size: 0.5em;
+  border-radius: 5px;
+  background-color: rgb(255, 69, 69);
+  height: 5px;
+  width: 5px;
+  margin: 2px;
+  padding: 0.4em;
+  text-decoration: none;
+  color: white;
+}
+footer p {
+  font-size: 0.7em;
+  font-weight: 100;
+}
+footer p.left {
+  float: left;
+  margin-top: 5px;
+}
+footer p.right {
+  float: right;
+  font-size: 1em;
+}
+footer p.right a {
+  text-decoration: none;
+  color: white;
+}
+footer p.right a:hover {
+  color: rgb(228, 228, 228);
+}
+
+.colour {
+  color: transparent;
+  background-image: linear-gradient(45deg, #f6a522, #cd791a);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+}
+
+.dark-colour {
+  color: transparent;
+  background-image: linear-gradient(45deg, rgb(252, 168, 0), #e57a00);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+}
+
+.purple {
+  color: transparent;
+  background-image: linear-gradient(45deg, #c822f6, #911acd);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+}/*# sourceMappingURL=styles.css.map */

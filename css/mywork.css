@@ -1,0 +1,211 @@
+header {
+  height: auto;
+}
+
+section#work {
+  margin-top: 0vw;
+  padding: 20px 6vw 3vw 3vw;
+  text-align: center;
+  display: block;
+  background-image: url("/assets/work.png"), linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+section#work h1 {
+  font-size: 3.4em;
+}
+section#work h2 {
+  font-size: 3em;
+  margin: 20px;
+}
+section#work h3 {
+  text-align: left;
+  font-size: 2em;
+  margin: 5px 20px 5px 20px;
+}
+section#work div.code div.grid {
+  margin: 0px 10px 0px 10px;
+  display: grid;
+  grid-template-columns: 23% 23% 23% 23%;
+}
+section#work div.code div.grid a {
+  text-decoration: none;
+  color: white;
+  background-color: rgb(255, 49, 49);
+  border-radius: 15px;
+  text-align: left;
+  padding: 10px;
+  margin: 10px;
+  transition: 0.5s;
+}
+section#work div.code div.grid a:hover {
+  transform: scale(1.02);
+  transition: 0.5s;
+}
+section#work div.code div.grid a div.main {
+  float: left;
+}
+section#work div.code div.grid a div.main h4 {
+  font-size: 1.5em;
+  margin: 0;
+  padding: 0;
+}
+section#work div.code div.grid a div.main p.info {
+  color: rgb(234, 234, 234);
+  margin-top: 100px;
+}
+section#work div.code div.grid a div.extras {
+  display: flex;
+  position: absolute;
+}
+section#work div.code div.grid a div.extras p {
+  float: left;
+  margin: 0.1vw;
+  background-color: white;
+  border-radius: 10px;
+  padding: 5px;
+  color: black;
+  text-align: center;
+}
+section#work div.code div.grid a div.extras p span.small {
+  font-size: 0.5em;
+  vertical-align: middle;
+}
+section#work div.code div.grid a div.extras p span.small.text {
+  display: flex;
+}
+section#work div.code div.grid a div.extras p.yellow {
+  background-color: rgb(255, 196, 0);
+}
+section#work div.code div.grid a div.extras p.red {
+  background-color: rgb(255, 84, 84);
+}
+section#work div.code div.grid a#portfolio {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), url("/assets/work/code/portfolio.png");
+  background-size: cover;
+  background-position: 50%;
+}
+section#work div.code div.grid a#summit {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), url("/assets/work/code/summit.png");
+  background-size: cover;
+  background-position: 50%;
+}
+section#work div.code div.grid a#chillbot {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), url("/assets/work/code/chillbot.png");
+  background-size: cover;
+  background-position: 50%;
+}
+section#work div.code div.grid a#lenoofficial {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), url("/assets/work/code/itsleno.png");
+  background-size: cover;
+  background-position: 50%;
+}
+section#work div.design div.sub-grid {
+  margin: 0px 0px 30px 0px;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+}
+section#work div.design div.sub-grid img {
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  border-radius: 25px;
+  text-align: left;
+  padding: 10px;
+  margin: 15px;
+  transition: 0.5s;
+  width: 95%;
+  height: 95%;
+  object-fit: cover;
+}
+section#work div.design div.sub-grid img:hover {
+  transform: scale(1.02);
+  transition: 0.5s;
+}
+section#work div.design div.sub-grid img:after {
+  content: "hello world im after evry img";
+  background-color: white;
+  border-radius: 15px;
+  padding: 10px;
+  margin: 5px;
+  width: 15px;
+  height: 15px;
+  display: block;
+  z-index: 98;
+}
+section#work div.video div.grid {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  margin-top: 10px;
+}
+section#work div.video div.grid a {
+  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.6784313725), rgba(11, 11, 11, 0.4588235294));
+  color: white;
+  background-size: 200%;
+  margin: 10px;
+  border-radius: 15px;
+  text-decoration: none;
+  padding: 80px 25px 80px 25px;
+  font-size: 2em;
+  font-weight: 800;
+  display: flex;
+  flex-direction: column;
+  vertical-align: middle;
+  justify-content: center;
+  transition: 0.5s;
+}
+section#work div.video div.grid a:hover {
+  transition: 0.5s;
+  transform: scale(1.03);
+  animation: vid-bg 10s alternate infinite;
+}
+section#work div.video div.grid a.large {
+  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.6784313725), rgba(0, 0, 0, 0.4588235294));
+}
+
+@keyframes vid-bg {
+  100% {
+    background-position: right;
+  }
+}
+div.full-img {
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+div.full-img img {
+  width: 90vw;
+  max-width: 500px;
+  border-radius: 10px;
+}
+div.full-img span {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+p.sub-title {
+  margin: 0 20px 0px 20px;
+  padding: 0;
+  text-align: left;
+  max-width: 50%;
+}
+p.sub-title a.text {
+  margin: 0;
+  padding: 0;
+  background: none;
+  color: white;
+  text-decoration: orange underline;
+}
+p.sub-title a.text:hover {
+  color: orange;
+}/*# sourceMappingURL=mywork.css.map */
