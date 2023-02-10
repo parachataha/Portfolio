@@ -1,5 +1,7 @@
 let fullImg = document.querySelector('#fullImg');
 let img = document.querySelector('#fullImg img');
+let src = img.src
+console.log(src)
 
 function openFullImg(pic) {
     img.src = pic;

@@ -5,13 +5,14 @@ header {
 section#work {
     margin-top: 0vw;
     padding: 20px 6vw 3vw 3vw;
-    text-align: center;
+    text-align: left;
     display: block;
     background-image: url('/assets/work.png'), linear-gradient(rgba(0, 0, 0, 0.2), rgba(0,0,0,0.2));
     background-size: cover;
     background-repeat: no-repeat;
     h1{
         font-size: 3.4em;
+        margin-left: 20px;
     }
     h2{
         font-size: 3em;
