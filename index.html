@@ -104,11 +104,11 @@
                     <p>VS Code</p>
                 </div>
                 <ul class="files">
-                    <li class="active">Get Started</li>
-                    <li>index.html</li>
-                    <li>index.scss</li>
-                    <li>script.js</li>
-                    <li>styles.css</li>
+                    <li class="active mobile-hide">Get Started</li>
+                    <li><span class="mobile-hide">index.</span>html</li>
+                    <li><span class="mobile-hide">index.</span>scss</li>
+                    <li><span class="mobile-hide">script.</span>js</li>
+                    <li><span class="mobile-hide">styles.</span>css</li>
                 </ul>
             </div>
             <div class="main">
@@ -180,7 +180,8 @@
         <h2>Let's start changing the world</h2>
         <p>Code, Design, Videos or Any of the above!</p>
         
-        <form action="" id="contact" name="contact" method="POST" data-netlify="true">
+        <form action="" id="contact" name="contact">
+            <!-- method="POST"  data-netlify="true" -->
             <h3>Get in Touch</h3>
 
             <div class="group">
@@ -205,6 +206,12 @@
                     <option value="whatsapp">WhatsApp</option>
                 </select>
                 <i class="bi bi-info-circle" id="contact-info"></i>
+            </div>
+            <p>Enter a Discord tag or phone number if you didn't select Email </p>
+            <div class="group"> 
+                <i class="bi bi-envelope-at"></i>
+                <input type="text" name="email" placeholder="Enter custom contact details">
+                <i class="bi bi-exclamation"></i>
             </div>
             
             <p>Select your requested service</p>

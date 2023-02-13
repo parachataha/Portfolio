@@ -7,6 +7,10 @@ const elements = {
     msg: document.querySelector("#contact > form > div:nth-child(8) > input[type=text]")
 };
 
+let numOfContact = 0
+numOfContact = localStorage.getItem(numOfContact);
+localStorage.setItem('numOfContact', numOfContact)
+
 form.addEventListener('submit', e => {
     console.log(
         `Name: ${elements.name.value}
@@ -15,5 +19,7 @@ form.addEventListener('submit', e => {
         Service: ${elements.service.value}
         Message: ${elements.msg.value}`
     )
-    e.preventDefault()
+    e.preventDefault();
+    numOfContact = localStorage.getItem(numOfContact) + 1;
+    localStorage.setItem('numOfContact')
 })

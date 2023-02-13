@@ -747,4 +747,185 @@ footer p.right a:hover {
   -webkit-background-clip: text;
   -moz-background-clip: text;
   background-clip: text;
+}
+
+@media screen and (max-width: 62em) {
+  .mobile-hide {
+    display: none;
+  }
+  body {
+    overflow-x: hidden;
+  }
+  header {
+    height: 100vh;
+    color: white;
+    overflow-x: hidden;
+  }
+  header nav {
+    display: none;
+  }
+  section#about div.about-header {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  section#about div.about-header img#earthRotate {
+    object-fit: contain;
+    width: 90vw;
+    margin: 10px;
+    display: none;
+  }
+  section#about div.about-header img#moonMove {
+    display: none;
+  }
+  div.about-info div.content {
+    backdrop-filter: blur(0px);
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    background-color: rgba(255, 255, 255, 0.3);
+    text-align: center;
+  }
+  div.about-info div.content p, div.about-info div.content a {
+    text-align: center;
+    border: none;
+    margin: 0;
+    padding: 0;
+    margin: 0 20px 0 20px;
+  }
+  div.about-info div.content a {
+    text-decoration: underline;
+  }
+  div.about-main div.grid {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  div.about-main div.grid div.item {
+    height: auto;
+    width: auto;
+    max-width: 600px;
+    transform: none;
+    transition: none;
+    animation: none;
+    padding: 10px;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+  }
+  div.about-main div.grid div#code {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+  }
+  section#discover {
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  section#discover div.vs {
+    transform: none;
+    animation: none;
+    transition: none;
+    width: 90vw;
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+  section#discover div.vs div.grid {
+    display: block;
+  }
+  section#discover div.vs div.grid div.side {
+    padding-top: 5px;
+  }
+  section#discover div.vs div.grid div.side div.branding {
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0 0 0;
+  }
+  section#discover div.vs div.grid div.side ul {
+    display: flex;
+    flex-grow: 3;
+    margin: 0;
+  }
+  section#discover div.vs div.grid div.side ul li {
+    flex-grow: 3;
+    width: auto;
+    text-align: center;
+  }
+  section#discover div.vs div.grid div.main {
+    padding: 10px;
+  }
+  section#discover div.vs div.grid div.main .top {
+    display: none;
+  }
+  section#discover div.design {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: none;
+    display: block;
+    width: auto;
+  }
+  section#discover div.design div.main, section#discover div.design div.discortics {
+    animation: none;
+    transition: none;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    object-fit: contain;
+    width: 90vw;
+    height: auto;
+    padding: 10px 10px 20px 10px;
+    margin: 50px 10px 10px 10px;
+    background: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    font-size: 1.2em;
+  }
+  section#discover div.design div.main a, section#discover div.design div.discortics a {
+    margin-top: 10px;
+    font-size: 1.2em;
+    padding: 10px;
+  }
+  section#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+  }
+  section#contact form {
+    margin: 10px;
+    margin-top: 50px;
+    width: 90vw;
+  }
+  section#contact form input, section#contact form select {
+    margin: 5px;
+  }
+  section#contact form .bi {
+    display: none;
+  }
+  footer div.grid {
+    display: block;
+  }
+  footer p.left, footer p.right {
+    float: none;
+    text-align: center;
+  }
 }/*# sourceMappingURL=styles.css.map */

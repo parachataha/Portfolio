@@ -224,3 +224,26 @@ p.sub-title {
         }
     }
 }
+
+@media screen and (max-width:62em) {
+    nav { display: block; }
+
+    section#work {
+        div.code, div.design, div.video {
+            display: block;
+            height: auto; width: 100vw;
+            h3{ display: block; }
+            div.grid, div.sub-grid {
+                
+                display: block;
+
+                a{
+                    height: auto;
+                    width: 100vw;
+
+                    &:after, &:before { display: none; }
+                }
+            }
+        }
+    }
+} 

@@ -30,34 +30,3 @@ timeline
     })
     .setTween(timeline)
     .addTo(controller);
-
-// ABOUT ME SECTION
-// timeline
-    // .to('#earthRotate', 2, {rotate: -40, delay: 3})
-    // .to('#moonMove', 2, {x: 550}, '-=2')
-    // .to('#moonMove', 2, {y: -100}, '-=2')
-    
-//     new ScrollMagic.Scene({
-//         triggerElement: '#moonMove',
-//         duration: '100%',
-//         triggerHook: 0.2, 
-//     })
-//     .setTween(timeline)
-//     .addTo(controller);
-
-// // DISCOVER SECTION 
-// timeline
-//     .to('#vsc', 5, {right: 50})
-
-//     new ScrollMagic.Scene({
-//         triggerElement: '#discover',
-//         duration: '100%',
-//         triggerHook: 0, 
-//     })
-
-// // shortcuts
-// // document.addEventListener('keydown', e => {
-// //     if (e.key.toLowerCase() === 'w' && e.ctrlKey) {
-// //         console.log('w was clicked')
-// //     } 
-// // })

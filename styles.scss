@@ -747,3 +747,150 @@ footer{
     -moz-background-clip: text;
     background-clip: text;
 }
+
+@media screen and (max-width:62em) {
+    .mobile-hide {
+        display: none;
+    }
+    body{ overflow-x: hidden; }
+    header{
+        nav{ display: none; }
+        height: 100vh;
+        color: white;
+        overflow-x: hidden;
+    }
+    section#about {
+        div.about-header {
+            height: auto;
+            display: flex; flex-direction: column; align-items: center; text-align: center;
+            img#earthRotate{ object-fit: contain; width:90vw; margin: 10px; display: none; }
+            img#moonMove{ display: none; }
+        }
+    }
+    div.about-info {
+        div.content {
+            backdrop-filter: blur(0px);
+            margin: 0; padding: 0;
+            border-radius: 0;
+            background-color: rgb(255, 255, 255, .3);
+            text-align: center;
+            p, a {
+                text-align: center;
+                border: none;
+                margin: 0; padding: 0;
+                margin: 0 20px 0 20px;
+            } a { text-decoration: underline; }
+        }
+    }
+    div.about-main {
+        div.grid {
+            width: auto;
+            display: flex; flex-direction: column; justify-content: center; align-items: center;
+            div.item {
+                height: auto;
+                width: auto;
+                max-width: 600px;
+                transform: none;
+                transition: none;
+                animation: none;
+                padding: 10px;
+                transform: scale(1);
+                -webkit-transform: scale(1);
+                -moz-transform: scale(1);
+                -ms-transform: scale(1);
+                -o-transform: scale(1);
+            }
+            div#code {
+                transform: scale(1);
+                -webkit-transform: scale(1);
+                -moz-transform: scale(1);
+                -ms-transform: scale(1);
+                -o-transform: scale(1);
+            }
+        }
+    }
+    section#discover {
+        background-size: cover;
+        display: flex; flex-direction: column;
+        justify-content: center; align-items: center;
+        div.vs {
+            transform: none;
+            animation: none; transition: none;
+            width: 90vw;
+            margin: 0; padding: 0;
+            margin-top: 10px;
+            justify-content: center; align-items: center;
+            div.grid {
+                display: block;
+                div.side{
+                    padding-top: 5px;
+                    div.branding {
+                        justify-content: center; align-items: center;
+                        margin: 10px 0 0 0;
+                    }
+                    ul {
+                        display: flex;
+                        flex-grow: 3;
+                        margin: 0;
+                        li {
+                            flex-grow: 3;
+                            width: auto;
+                            text-align: center;
+                        }
+                    }
+                }
+                div.main {
+                    padding: 10px;
+                    .top { display: none; }
+                }
+            }
+        }
+        div.design {
+            display: flex; flex-direction: column;
+            justify-content: center; align-items: center;
+            animation: none;
+            display: block;
+            width: auto;
+            div.main, div.discortics {
+                animation: none; transition: none;
+                transform: scale(1);
+                -webkit-transform: scale(1);
+                -moz-transform: scale(1);
+                -ms-transform: scale(1);
+                -o-transform: scale(1);
+                object-fit: contain;
+                width: 90vw;
+                height: auto;
+                padding: 10px 10px 20px 10px;
+                margin: 50px 10px 10px 10px;
+                background: none;
+                background-color: rgba(255, 255, 255, 0.1);
+                border-radius: 15px;
+                font-size: 1.2em;
+                a{
+                    margin-top: 10px;
+                    font-size: 1.2em; padding: 10px;
+                }
+            }
+        }
+    }
+    section#contact {
+        display: flex; flex-direction: column;
+        justify-content: center; align-items: center;
+        padding: 50px;
+        form {
+            margin: 10px;
+            margin-top: 50px;
+            width: 90vw;
+
+            input, select { margin: 5px; }
+            .bi { display: none; }
+        }
+    }
+    footer {
+        div.grid {
+            display: block;
+        }
+        p.left, p.right { float:none; text-align: center; }
+    }
+}
