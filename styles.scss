@@ -15,6 +15,7 @@ html{ margin: 0;padding: 0;
 
 nav{
     position: fixed;
+    left: 0;
     top: 0;
     width: 100%;
     background-image: linear-gradient(rgb(0, 0, 0, .5), rgb(0,0,0,0));
@@ -22,8 +23,10 @@ nav{
     ul {
         display: flex;
         justify-content: center;
+        justify-content: center; align-items: center;
         list-style: none;
         padding: 5px;
+        width: 100%;
 
         li{
             margin: 10px;
@@ -751,6 +754,9 @@ footer{
 body#success {
     padding: 50px 10vw 50px 10vw;
     text-align: center;
+    background-color: rgb(23, 13, 0);
+
+    h1 {margin-top: 50px;}
 
     div#details {
         padding: 100px 40px 100px 40px;
@@ -785,7 +791,6 @@ body#success {
     }
     body{ overflow-x: hidden; }
     header{
-        nav{ display: none; }
         height: 100vh;
         color: white;
         overflow-x: hidden;

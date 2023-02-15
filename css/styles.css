@@ -21,6 +21,7 @@ html body {
 
 nav {
   position: fixed;
+  left: 0;
   top: 0;
   width: 100%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
@@ -29,8 +30,11 @@ nav {
 nav ul {
   display: flex;
   justify-content: center;
+  justify-content: center;
+  align-items: center;
   list-style: none;
   padding: 5px;
+  width: 100%;
 }
 nav ul li {
   margin: 10px;
@@ -752,6 +756,10 @@ footer p.right a:hover {
 body#success {
   padding: 50px 10vw 50px 10vw;
   text-align: center;
+  background-color: rgb(23, 13, 0);
+}
+body#success h1 {
+  margin-top: 50px;
 }
 body#success div#details {
   padding: 100px 40px 100px 40px;
@@ -795,9 +803,6 @@ body#success div#details span {
     height: 100vh;
     color: white;
     overflow-x: hidden;
-  }
-  header nav {
-    display: none;
   }
   section#about div.about-header {
     height: auto;
