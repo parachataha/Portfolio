@@ -749,6 +749,41 @@ footer p.right a:hover {
   background-clip: text;
 }
 
+body#success {
+  padding: 50px 10vw 50px 10vw;
+  text-align: center;
+}
+body#success div#details {
+  padding: 100px 40px 100px 40px;
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: #e57a00 2px solid;
+  border-radius: 15px;
+  background-color: rgba(255, 123, 29, 0.2);
+}
+body#success div#details a {
+  color: rgb(255, 154, 4);
+}
+body#success div#details div.main {
+  display: flex;
+}
+body#success div#details p {
+  margin: 20px;
+  font-size: 1.1em;
+  margin-right: 3px;
+}
+body#success div#details span {
+  font-size: 0.8em;
+  color: rgb(255, 123, 29);
+  border: #e57a00 1px solid;
+  border-radius: 10px;
+  padding: 7px 15px 7px 15px;
+  min-width: 20px;
+}
+
 @media screen and (max-width: 62em) {
   .mobile-hide {
     display: none;
@@ -914,6 +949,7 @@ footer p.right a:hover {
     margin: 10px;
     margin-top: 50px;
     width: 90vw;
+    border-radius: 0;
   }
   section#contact form input, section#contact form select {
     margin: 5px;

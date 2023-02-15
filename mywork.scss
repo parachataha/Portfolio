@@ -230,18 +230,56 @@ p.sub-title {
 
     section#work {
         div.code, div.design, div.video {
+            p.sub-title { max-width: 92%; }
             display: block;
             height: auto; width: 100vw;
             h3{ display: block; }
-            div.grid, div.sub-grid {
-                
+            div.grid,div.sub-grid   {
+                margin: 0 5vw 0 0vw;
+                padding: 10px;
                 display: block;
 
-                a{
-                    height: auto;
-                    width: 100vw;
+                a, img{
+                    display: block;
+                    height: 150px;
 
-                    &:after, &:before { display: none; }
+                    *{
+                        display: block;
+                    }
+                    &:hover { 
+                        transform: scale(1);
+                        -webkit-transform: scale(1);
+                        -o-transform: scale(1);
+                        -ms-transform: scale(1);
+                        -moz-transform: scale(1);
+                    }
+                    div.extras {
+                        display: block;
+                        p.extra {
+                            display: block;
+                            width: auto;
+                            height: auto;
+                            margin: 2px;
+                            .small { display: none; }
+                        }
+                    }
+                }
+                img {
+                    margin: 15px 0 15px 0px;
+                    padding: 0;
+                    height: 20vw;
+                    border-radius: 15px;
+                }
+            }
+        }
+        div.video {
+            div.grid {
+                a{ 
+                    display: block;
+                    height: auto;
+                    text-align: center;
+                    padding: 50px;
+                    background-color: rgb(255, 106, 0);
                 }
             }
         }

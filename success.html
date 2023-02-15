@@ -5,21 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thank you for Submitting a Request!</title>
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
-<body>
+<body id="success">
     <section id="success">
-        <h1>Thanks for submitting a request! I will contact you via <span id="contactMethod">{contactMethod}</span> as soon as possible. In the mean time, heres what I received:</h1>
+        <h1>Thanks for submitting a request! <br> I will contact you via <span id="contactMethod">{data}</span> as soon as possible. In the mean time, heres what I received:</h1>
         
-        <div class="details">
+        <div id="details">
+            <h2>Your Request</h2>
+            <a href="">Request to cancel</a>
             <div class="main">
-                <span id="name">{name}</span>
-                <span id="email">{email}</span>
+                <p> Name: <span id="name">{data}</span> </p>
+                <p> Email: <span id="email">{data}</span> </p>
             </div>
+            <p> Contact Method: <span id="contactMethod">{data}</span> </p>
+            <p> Contact Details: <span id="ContactDetails">{data}</span> </p>
+            <p> Your Message: <span id="msg">{data}</span> </p>
         </div>
-        <span id="email">{email}</span>
-        <span id="contactMethod">{contactMethod}</span>
-        <span id="contactDetails">{contactDetails}</span>
-        <span id="msg">{msg}</span>
+
     </section>
 </body>
 </html>

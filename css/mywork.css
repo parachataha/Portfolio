@@ -220,17 +220,54 @@ p.sub-title a.text:hover {
     height: auto;
     width: 100vw;
   }
+  section#work div.code p.sub-title, section#work div.design p.sub-title, section#work div.video p.sub-title {
+    max-width: 92%;
+  }
   section#work div.code h3, section#work div.design h3, section#work div.video h3 {
     display: block;
   }
   section#work div.code div.grid, section#work div.code div.sub-grid, section#work div.design div.grid, section#work div.design div.sub-grid, section#work div.video div.grid, section#work div.video div.sub-grid {
+    margin: 0 5vw 0 0vw;
+    padding: 10px;
     display: block;
   }
-  section#work div.code div.grid a, section#work div.code div.sub-grid a, section#work div.design div.grid a, section#work div.design div.sub-grid a, section#work div.video div.grid a, section#work div.video div.sub-grid a {
-    height: auto;
-    width: 100vw;
+  section#work div.code div.grid a, section#work div.code div.grid img, section#work div.code div.sub-grid a, section#work div.code div.sub-grid img, section#work div.design div.grid a, section#work div.design div.grid img, section#work div.design div.sub-grid a, section#work div.design div.sub-grid img, section#work div.video div.grid a, section#work div.video div.grid img, section#work div.video div.sub-grid a, section#work div.video div.sub-grid img {
+    display: block;
+    height: 150px;
   }
-  section#work div.code div.grid a:after, section#work div.code div.grid a:before, section#work div.code div.sub-grid a:after, section#work div.code div.sub-grid a:before, section#work div.design div.grid a:after, section#work div.design div.grid a:before, section#work div.design div.sub-grid a:after, section#work div.design div.sub-grid a:before, section#work div.video div.grid a:after, section#work div.video div.grid a:before, section#work div.video div.sub-grid a:after, section#work div.video div.sub-grid a:before {
+  section#work div.code div.grid a *, section#work div.code div.grid img *, section#work div.code div.sub-grid a *, section#work div.code div.sub-grid img *, section#work div.design div.grid a *, section#work div.design div.grid img *, section#work div.design div.sub-grid a *, section#work div.design div.sub-grid img *, section#work div.video div.grid a *, section#work div.video div.grid img *, section#work div.video div.sub-grid a *, section#work div.video div.sub-grid img * {
+    display: block;
+  }
+  section#work div.code div.grid a:hover, section#work div.code div.grid img:hover, section#work div.code div.sub-grid a:hover, section#work div.code div.sub-grid img:hover, section#work div.design div.grid a:hover, section#work div.design div.grid img:hover, section#work div.design div.sub-grid a:hover, section#work div.design div.sub-grid img:hover, section#work div.video div.grid a:hover, section#work div.video div.grid img:hover, section#work div.video div.sub-grid a:hover, section#work div.video div.sub-grid img:hover {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    -moz-transform: scale(1);
+  }
+  section#work div.code div.grid a div.extras, section#work div.code div.grid img div.extras, section#work div.code div.sub-grid a div.extras, section#work div.code div.sub-grid img div.extras, section#work div.design div.grid a div.extras, section#work div.design div.grid img div.extras, section#work div.design div.sub-grid a div.extras, section#work div.design div.sub-grid img div.extras, section#work div.video div.grid a div.extras, section#work div.video div.grid img div.extras, section#work div.video div.sub-grid a div.extras, section#work div.video div.sub-grid img div.extras {
+    display: block;
+  }
+  section#work div.code div.grid a div.extras p.extra, section#work div.code div.grid img div.extras p.extra, section#work div.code div.sub-grid a div.extras p.extra, section#work div.code div.sub-grid img div.extras p.extra, section#work div.design div.grid a div.extras p.extra, section#work div.design div.grid img div.extras p.extra, section#work div.design div.sub-grid a div.extras p.extra, section#work div.design div.sub-grid img div.extras p.extra, section#work div.video div.grid a div.extras p.extra, section#work div.video div.grid img div.extras p.extra, section#work div.video div.sub-grid a div.extras p.extra, section#work div.video div.sub-grid img div.extras p.extra {
+    display: block;
+    width: auto;
+    height: auto;
+    margin: 2px;
+  }
+  section#work div.code div.grid a div.extras p.extra .small, section#work div.code div.grid img div.extras p.extra .small, section#work div.code div.sub-grid a div.extras p.extra .small, section#work div.code div.sub-grid img div.extras p.extra .small, section#work div.design div.grid a div.extras p.extra .small, section#work div.design div.grid img div.extras p.extra .small, section#work div.design div.sub-grid a div.extras p.extra .small, section#work div.design div.sub-grid img div.extras p.extra .small, section#work div.video div.grid a div.extras p.extra .small, section#work div.video div.grid img div.extras p.extra .small, section#work div.video div.sub-grid a div.extras p.extra .small, section#work div.video div.sub-grid img div.extras p.extra .small {
     display: none;
+  }
+  section#work div.code div.grid img, section#work div.code div.sub-grid img, section#work div.design div.grid img, section#work div.design div.sub-grid img, section#work div.video div.grid img, section#work div.video div.sub-grid img {
+    margin: 15px 0 15px 0px;
+    padding: 0;
+    height: 20vw;
+    border-radius: 15px;
+  }
+  section#work div.video div.grid a {
+    display: block;
+    height: auto;
+    text-align: center;
+    padding: 50px;
+    background-color: rgb(255, 106, 0);
   }
 }/*# sourceMappingURL=mywork.css.map */
